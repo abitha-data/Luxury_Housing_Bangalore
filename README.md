@@ -6,14 +6,14 @@ This project delivers a complete end-to-end analytics workflow for Bengaluru’s
 
 ### 📂 Project Contents:
 
-├── data/
-│   └── luxury_house_bangalore.csv
-├── notebooks/
-│   └── data_cleaning.ipynb
-│   └── EDA_analysis.ipynb
-├── powerbi/
-│   └── Luxury_Housing.pbix
-├── README.md
+           ├── data/
+           │   └── luxury_house_bangalore.csv
+           ├── notebooks/
+           │   └── data_cleaning.ipynb
+           │   └── EDA_analysis.ipynb
+           ├── powerbi/
+           │   └── Luxury_Housing.pbix
+           ├── README.md
 
 
 
