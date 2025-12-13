@@ -56,3 +56,21 @@ Ensured data integrity, consistency, and elimination of duplicate records prior 
 ### 📊 3. Power BI – Interactive Dashboard & Business Insights
 
 Power BI was employed to transform the validated SQL dataset into interactive, enterprise-ready dashboards that support strategic real estate decision-making. A direct connection was established between Power BI and the SQL database, followed by the creation of a robust data model and essential DAX measures. The dashboards were designed with dynamic slicers for Builder, Quarter, Micro_Market, and Configuration, and included comprehensive visualizations covering market trends, builder performance, booking conversion analysis, configuration demand, sales channel effectiveness, possession status impact, geographical distribution, and top-performing builders. KPI indicators and drill-through functionality were implemented to enable detailed project-level analysis and deeper business insights.
+
+### 🚀 Business Insights:
+
+Bengaluru luxury sales show strong quarterly consistency
+
+Prestige, RMZ, Godrej lead in overall revenue
+
+Amenity score has a mild positive correlation with booking conversion
+
+Launch-stage projects attract maximum buyers
+
+Ready-to-Move and Under-Construction properties show distinct buyer preferences
+
+Sales Channels such as Broker and Online drive majority of conversions
+
+Jayanagar, Indiranagar, Koramangala emerge as top micro-markets
+
+NRI & HNI buyers contribute highest to premium segment bookings
