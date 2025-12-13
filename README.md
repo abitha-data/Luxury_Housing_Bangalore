@@ -74,3 +74,17 @@ Sales Channels such as Broker and Online drive majority of conversions
 Jayanagar, Indiranagar, Koramangala emerge as top micro-markets
 
 NRI & HNI buyers contribute highest to premium segment bookings
+
+### 🛠️ Tools & Technologies
+
+Python – Pandas, NumPy for data cleaning and feature engineering
+
+SQL – MySQL / PostgreSQL for structured data storage and validation
+
+Power BI – DAX, KPI creation, and interactive dashboard development
+
+Jupyter Notebook – Exploratory analysis and data preprocessing
+
+VS Code – Development and scripting environment
+
+GitHub – Version control and project documentation
