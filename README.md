@@ -56,22 +56,22 @@ Exported the refined dataset for structured loading into the SQL database.
 
 ### 🧠 2. SQL – Data Loading & Validation
 
-The cleaned dataset was loaded into a relational SQL database to enable structured querying and validation.
+Cleaned data was inserted into a SQL relational database.
 
-✔ Key SQL Activities
+✔ SQL Activities
 
-Designed and created the SQL table schema to support analytical requirements.
+Created SQL table schema
 
-Inserted the cleaned records into the database using Python with SQLAlchemy.
+Inserted cleaned records via Python + SQLAlchemy
 
-Executed validation queries to verify record counts and aggregations, including:
+Ran validation queries:
 
         SELECT COUNT(*) FROM luxury_sales;
         SELECT Builder, SUM(Ticket_Price_Cr) FROM luxury_sales GROUP BY Builder;
         SELECT Micro_Market, AVG(Amenity_Score) FROM luxury_sales GROUP BY Micro_Market;
 
 
-Ensured data integrity, consistency, and elimination of duplicate records prior to visualization.
+Verified data integrity & duplicates.
 
 ### 📊 3. Power BI – Interactive Dashboard & Business Insights
 
@@ -91,23 +91,20 @@ Online + Direct Sales channels have higher conversion success.
 
 ### 🛠️ Tools & Technologies
 
-Python – Pandas, NumPy for data cleaning and feature engineering
+- Python (Pandas, NumPy)  
 
-SQL – MySQL / PostgreSQL for structured data storage and validation
+- SQL (PostgreSQL)  
 
-Power BI – DAX, KPI creation, and interactive dashboard development
+- Power BI (DAX, KPIs, Interactive Visuals)  
 
-Jupyter Notebook – Exploratory analysis and data preprocessing
+- Jupyter Notebook, VS Code
 
-VS Code – Development and scripting environment
+### 📂 Dataset
+- Size: 100,000+ records  
 
-GitHub – Version control and project documentation
+- Key fields include Builder, Micro_Market, Ticket_Price_Cr, Configuration, Buyer_Type, Booking_Status, Sales_Channel, Amenity_Score, Possession_Status  
 
 ### 📌 How to Run the Project
-Clone the repo:
-        
-        git clone https://github.com/yourusername/luxury-housing-bangalore.git
-        cd luxury-housing-bangalore
 
 Run Notebook:
 
@@ -118,6 +115,10 @@ Open Power BI:
        Download Luxury_Housing.pbix
 
        Refresh data model
+
+### 🎯 Outcome
+   
+   This project demonstrates an enterprise-ready analytics solution, showcasing an end-to-end data pipeline from raw data to actionable insights for the real estate domain.
 
 ### 📂 Project Contents:
 
