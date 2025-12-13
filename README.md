@@ -4,11 +4,11 @@
 
 This project delivers a complete end-to-end analytics workflow for Bengaluru’s luxury housing sector by integrating Python for data cleaning, SQL for structured storage, and Power BI for interactive visualization. Using a dataset of 1,00,000+ records containing builder profiles, micro-market locations, pricing, configurations, amenities, sales channels, and booking information, the analysis uncovers key insights on market performance, buyer behaviour, booking conversion trends, and demand patterns. The combined pipeline provides a scalable, enterprise-ready solution for developers, investors, and stakeholders to make informed, data-driven decisions in the real estate domain.
 
-📌 Project Pipeline Overview
+### 📌 Project Pipeline Overview
 
 This project was developed through a structured, three-stage workflow, enabling a seamless transition from raw data to actionable business intelligence.
 
-🐍 1. Python – Data Cleaning & Feature Engineering
+### 🐍 1. Python – Data Cleaning & Feature Engineering
 
 Extensive preprocessing was performed on the raw dataset to ensure analytical accuracy, consistency, and readiness for downstream processing.
 
@@ -34,7 +34,7 @@ Engineered supplementary analytical attributes including:
 
 Exported the refined dataset for structured loading into the SQL database.
 
-🧠 2. SQL – Data Loading & Validation
+### 🧠 2. SQL – Data Loading & Validation
 
 The cleaned dataset was loaded into a relational SQL database to enable structured querying and validation.
 
@@ -52,3 +52,7 @@ Executed validation queries to verify record counts and aggregations, including:
 
 
 Ensured data integrity, consistency, and elimination of duplicate records prior to visualization.
+
+### 📊 3. Power BI – Interactive Dashboard & Business Insights
+
+Power BI was employed to transform the validated SQL dataset into interactive, enterprise-ready dashboards that support strategic real estate decision-making. A direct connection was established between Power BI and the SQL database, followed by the creation of a robust data model and essential DAX measures. The dashboards were designed with dynamic slicers for Builder, Quarter, Micro_Market, and Configuration, and included comprehensive visualizations covering market trends, builder performance, booking conversion analysis, configuration demand, sales channel effectiveness, possession status impact, geographical distribution, and top-performing builders. KPI indicators and drill-through functionality were implemented to enable detailed project-level analysis and deeper business insights.
