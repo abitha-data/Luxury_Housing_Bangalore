@@ -4,17 +4,18 @@
 
 This project delivers a complete end-to-end analytics workflow for Bengaluru’s luxury housing sector by integrating Python for data cleaning, SQL for structured storage, and Power BI for interactive visualization. Using a dataset of 1,00,000+ records containing builder profiles, micro-market locations, pricing, configurations, amenities, sales channels, and booking information, the analysis uncovers key insights on market performance, buyer behaviour, booking conversion trends, and demand patterns. The combined pipeline provides a scalable, enterprise-ready solution for developers, investors, and stakeholders to make informed, data-driven decisions in the real estate domain.
 
-### 📂 Project Contents:
+### 📌 Project Pipeline Overview
 
-           ├── data/
-           │   └── luxury_house_bangalore.csv
-           ├── notebooks/
-           │   └── data_cleaning.ipynb
-           │   └── EDA_analysis.ipynb
-           ├── powerbi/
-           │   └── Luxury_Housing.pbix
-           ├── README.md
+The project follows a structured three-stage analytics pipeline.
 
+### 🐍 1. Python – Data Cleaning & Feature Engineering
+- Loaded raw CSV data using Pandas  
+- Cleaned inconsistent fields (Ticket Price, Amenity Score, Buyer Comments)  
+- Handled missing and null values  
+- Normalized categorical text fields (Builder, Micro_Market, Configuration)  
+- Converted pricing values into Crores (Cr)  
+- Engineered features such as Price_per_Sqft, Quarter_Label, and Booking_Flag  
+- Exported the cleaned dataset for SQL integration 
 
 ### 🧹 Data Cleaning (Python)
 
@@ -29,7 +30,7 @@ Key cleaning steps done in Jupyter Notebook:
                      .str.strip()
                    )
 
-3. Clean Ticket Price Column
+2. Clean Ticket Price Column
 
                df['Ticket_Price_Cr'] = (
                   df['Ticket_Price_Cr']
@@ -38,29 +39,10 @@ Key cleaning steps done in Jupyter Notebook:
                     .astype(float)
                   )
 
-4. Convert Purchase Date to Date Format
+3. Convert Purchase Date to Date Format
 
               df['Purchase_Date'] = pd.to_datetime(df['Purchase_Date'], errors='coerce')
 
-### 📌 Project Pipeline Overview
-
-This project was developed through a structured, three-stage workflow, enabling a seamless transition from raw data to actionable business intelligence.
-
-### 🐍 1. Python – Data Cleaning & Feature Engineering
-
-Extensive preprocessing was performed on the raw dataset to ensure analytical accuracy, consistency, and readiness for downstream processing.
-
-✔ Key Data Preparation Activities
-
-Imported and processed the raw CSV using Pandas for efficient tabular manipulation.
-
-Standardized inconsistent inputs across critical fields such as Ticket Price, Amenity Score, and Buyer Comments.
-
-Detected and treated missing values using appropriate imputation and cleaning strategies.
-
-Normalized categorical text fields (Builder, Micro_Market, Configuration) to maintain uniform formatting.
-
-Converted monetary values into Crores (Cr) for consistency in financial analysis.
 
 Engineered supplementary analytical attributes including:
 
@@ -97,21 +79,15 @@ Power BI was employed to transform the validated SQL dataset into interactive, e
 
 ### 🚀 Business Insights:
 
-Bengaluru luxury sales show strong quarterly consistency
+Most luxury projects are concentrated in Bangalore East & North.
 
-Prestige, RMZ, Godrej lead in overall revenue
+Prestige, Embassy, RMZ dominate overall revenue.
 
-Amenity score has a mild positive correlation with booking conversion
+Booking success rate averages around 50% across builders.
 
-Launch-stage projects attract maximum buyers
+Ready-to-Move homes show stronger booking rates.
 
-Ready-to-Move and Under-Construction properties show distinct buyer preferences
-
-Sales Channels such as Broker and Online drive majority of conversions
-
-Jayanagar, Indiranagar, Koramangala emerge as top micro-markets
-
-NRI & HNI buyers contribute highest to premium segment bookings
+Online + Direct Sales channels have higher conversion success.
 
 ### 🛠️ Tools & Technologies
 
@@ -126,3 +102,30 @@ Jupyter Notebook – Exploratory analysis and data preprocessing
 VS Code – Development and scripting environment
 
 GitHub – Version control and project documentation
+
+### 📌 How to Run the Project
+Clone the repo:
+        
+        git clone https://github.com/yourusername/luxury-housing-bangalore.git
+        cd luxury-housing-bangalore
+
+Run Notebook:
+
+       jupyter notebook notebooks/data_cleaning.ipynb
+
+Open Power BI:
+
+       Download Luxury_Housing.pbix
+
+       Refresh data model
+
+### 📂 Project Contents:
+
+           ├── data/
+           │   └── luxury_house_bangalore.csv
+           ├── notebooks/
+           │   └── data_cleaning.ipynb
+           │   └── EDA_analysis.ipynb
+           ├── powerbi/
+           │   └── Luxury_Housing.pbix
+           ├── README.md
