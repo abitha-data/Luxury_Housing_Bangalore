@@ -104,7 +104,7 @@ Online + Direct Sales channels have higher conversion success.
 
 ### 🛠️ Tools & Technologies
 
-- Python (Pandas, NumPy)  
+- Python (Data Cleaning)  
 
 - SQL (PostgreSQL)  
 
