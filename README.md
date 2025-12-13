@@ -143,3 +143,8 @@ Open Power BI:
            ├── powerbi/
            │   └── Luxury_Housing.pbix
            ├── README.md
+
+
+### Screenshot:
+<img width="1920" height="1019" alt="luxury house 12_13_2025 5_42_09 PM" src="https://github.com/user-attachments/assets/036ac98b-38ac-4b41-aa6f-aa22569d76d0" />
+
