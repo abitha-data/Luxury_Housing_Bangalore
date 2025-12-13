@@ -33,3 +33,22 @@ Engineered supplementary analytical attributes including:
          3. Booking_Flag – binary classification enabling conversion analysis
 
 Exported the refined dataset for structured loading into the SQL database.
+
+🧠 2. SQL – Data Loading & Validation
+
+The cleaned dataset was loaded into a relational SQL database to enable structured querying and validation.
+
+✔ Key SQL Activities
+
+Designed and created the SQL table schema to support analytical requirements.
+
+Inserted the cleaned records into the database using Python with SQLAlchemy.
+
+Executed validation queries to verify record counts and aggregations, including:
+
+        SELECT COUNT(*) FROM luxury_sales;
+        SELECT Builder, SUM(Ticket_Price_Cr) FROM luxury_sales GROUP BY Builder;
+        SELECT Micro_Market, AVG(Amenity_Score) FROM luxury_sales GROUP BY Micro_Market;
+
+
+Ensured data integrity, consistency, and elimination of duplicate records prior to visualization.
