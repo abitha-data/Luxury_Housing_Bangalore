@@ -21,23 +21,24 @@ This project delivers a complete end-to-end analytics workflow for Bengaluru’s
 Key cleaning steps done in Jupyter Notebook:
 
 1. Clean Configuration Column
-df['Configuration'] = (
-    df['Configuration']
-    .astype(str)
-    .str.lower()
-    .str.strip()
-)
+                 df['Configuration'] = (
+                    df['Configuration']
+                     .astype(str)
+                     .str.lower()
+                     .str.strip()
+                   )
 
 2. Clean Ticket Price Column
-df['Ticket_Price_Cr'] = (
-    df['Ticket_Price_Cr']
-    .astype(str)
-    .str.replace('c', '', regex=False)
-    .astype(float)
-)
+                df['Ticket_Price_Cr'] = (
+                  df['Ticket_Price_Cr']
+                    .astype(str)
+                    .str.replace('c', '', regex=False)
+                    .astype(float)
+                  )
 
 3. Convert Purchase Date to Date Format
-df['Purchase_Date'] = pd.to_datetime(df['Purchase_Date'], errors='coerce')
+
+              df['Purchase_Date'] = pd.to_datetime(df['Purchase_Date'], errors='coerce')
 
 ### 📌 Project Pipeline Overview
 
