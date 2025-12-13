@@ -26,10 +26,10 @@ Converted monetary values into Crores (Cr) for consistency in financial analysis
 
 Engineered supplementary analytical attributes including:
 
-Price_per_Sqft – a unit cost indicator for comparative pricing
+         1. Price_per_Sqft – a unit cost indicator for comparative pricing
 
-Quarter_Label – temporal segmentation for trend evaluation
+         2. Quarter_Label – temporal segmentation for trend evaluation
 
-Booking_Flag – binary classification enabling conversion analysis
+         3. Booking_Flag – binary classification enabling conversion analysis
 
 Exported the refined dataset for structured loading into the SQL database.
